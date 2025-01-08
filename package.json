@@ -1,5 +1,13 @@
 {
   "dependencies": {
-    "canvas-sketch": "^0.7.7"
+    "canvas-sketch": "^0.7.7",
+    "canvas-sketch-util": "^1.10.0",
+    "color-interpolate": "^1.0.5",
+    "colormap": "^2.3.2",
+    "eases": "^1.0.8",
+    "install": "^0.13.0",
+    "math": "^0.0.3",
+    "npm": "^11.0.0",
+    "random": "^5.1.1"
   }
 }
