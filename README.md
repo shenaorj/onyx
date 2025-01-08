@@ -1,7 +1,6 @@
 # Onyx IA 🌌  
 _Your Intelligent Blockchain Companion_  
 
-![Onyx IA](./image.png)  
 _Onyx, the AI-powered orb, bringing transparency and insight into the blockchain universe._
 
 ---
