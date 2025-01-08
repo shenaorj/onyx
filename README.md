@@ -50,7 +50,6 @@ Analyze token performance in real time.
    ```bash
    git clone https://github.com/yourusername/onyx-ia.git
    cd onyx-ia
-
 2. pip install -r requirements.txt
 
 3. Run the scripts
