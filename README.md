@@ -46,13 +46,14 @@ Analyze token performance in real time.
 
 ## Installation  
 
-1. Clone the repository:  
-   ```bash
+## 1. Clone the repository:  
+
    git clone https://github.com/yourusername/onyx-ia.git
    cd onyx-ia
-2. pip install -r requirements.txt
 
-3. Run the scripts
+## 2. pip install -r requirements.txt
+
+## 3. Run the scripts
 
    python rug_pull_detection.py
 
