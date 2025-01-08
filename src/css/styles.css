@@ -7,6 +7,12 @@ body {
 
 }
 
+.audiowide-regular {
+  font-family: "Audiowide", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
   display: flex;
   color: white;
@@ -304,7 +310,7 @@ header {
 }
 
 
-.slider {
+.slider-div {
   top: -700px;
   position: absolute;
   width: 100%;
@@ -334,7 +340,7 @@ header {
   width: 130%;
 }
 
-.slider .list {
+.slider-div .list {
   display: flex;
   width: 100%;
   min-width: calc(var(--width) * var(--quantity));
@@ -342,7 +348,7 @@ header {
 
 }
 
-.slider .list .item {
+.slider-div .list .item {
   width: var(--width);
   height: var(--height);
   position: absolute;
@@ -376,47 +382,107 @@ header {
   }
 }
 
+/*text container */
+.text-container {
+  position: absolute;
+  top: 1800px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-container h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, rgb(255, 0, 212), rgb(0, 229, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s infinite;
+  font-family: "Audiowide", sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text-container h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, rgb(255, 0, 212), rgb(0, 229, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s infinite;
+  font-family: "Audiowide", sans-serif;
+  background-size: 200% 200%;
+}
+
+.text-container p {
+  position: relative;
+  color: white;
+  font-size: 20px;
+  font-family: "Audiowide", sans-serif;
+  text-align: justify;
+  
+}
+
 /* cards code containers */
 
-.code-container {
+.code-container-cards {
   position: absolute; /* O 'fixed' si quieres que sea fijo al hacer scroll */
-  top: 1700px; /* A 1200px de la parte superior */
+  top: 2500px; /* A 1200px de la parte superior */
   left: 50%; /* Centrar horizontalmente */
   transform: translateX(-50%); /* Ajustar para centrar completamente en horizontal */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px; /* Espaciado entre los objetos */
+
 }
 
 .card-code-container-html, .card-code-container-css, .card-code-container-js {
- 
+ position: relative;
   width: 300px;
-  height: 400px;
+  height: 390px;
   margin: 0 auto;
   background-color: #24233b;
   border-radius: 8px;
   z-index: 1;
   box-shadow: 0px 10px 10px rgb(73, 70, 92);
   transition: 0.5s;
+
 }
 
-.card-code-container:hover {
+
+.card-code-container-html:hover, .card-code-container-css:hover, .card-code-container-js:hover {
+ 
   transform: translateY(-7px);
   box-shadow: 0px 10px 10px black;
 }
 
 .top {
+
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
 
 .circle {
+ 
   padding: 0 4px;
 }
 
 .circle2 {
+
   display: inline-block;
   align-items: center;
   width: 10px;
@@ -426,15 +492,15 @@ header {
 }
 
 .red {
-  background-color: #ff605c;
+  background-color:  rgb(73, 70, 92); ;
 }
 
 .yellow {
-  background-color: #ffbd44;
+  background-color:  rgb(73, 70, 92); 
 }
 
 .green {
-  background-color: #00ca4e;
+  background-color:  rgb(73, 70, 92); 
 }
 
 .header {
@@ -450,13 +516,15 @@ header {
 }
 
 .code-container {
+  top: 0px;
   text-align: center;
+
 }
 #code {
   width: 270px;
-  height: 350px;
+  height: 300px;
   resize: none;
-  background-color: rgb(73, 70, 92);
+  background-color:#24233b;
   border-radius: 5px;
   border: none;
   color: white;
@@ -464,4 +532,70 @@ header {
 }
 #code:focus {
   outline: none !important;
+}
+
+
+
+/* input */
+.input-container {
+  position: absolute;
+  top: 1700px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cssbuttons-io-button {
+  background:linear-gradient(to right, rgb(255, 0, 212), rgb(0, 229, 255));
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
