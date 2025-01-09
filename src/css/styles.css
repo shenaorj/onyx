@@ -101,12 +101,10 @@ header {
 }
 
 .background {
-
   position: absolute;
   top: 100px;
-  left: 900px;
+  left: 800px;
 }
-
 
 .card-container {
   height: 900px;
@@ -255,7 +253,7 @@ header {
 
 .code-container-cards {
   position: absolute; /* O 'fixed' si quieres que sea fijo al hacer scroll */
-  top: 2500px; /* A 1200px de la parte superior */
+  top: 2600px; /* A 1200px de la parte superior */
   left: 50%; /* Centrar horizontalmente */
   transform: translateX(-50%); /* Ajustar para centrar completamente en horizontal */
   display: flex;
@@ -278,15 +276,12 @@ header {
 
 }
 
-
 .card-code-container-html:hover, .card-code-container-css:hover, .card-code-container-js:hover {
- 
   transform: translateY(-7px);
   box-shadow: 0px 10px 10px black;
 }
 
 .top {
-
   display: flex;
   align-items: center;
   padding-left: 10px;
@@ -319,11 +314,6 @@ header {
   background-color:  rgb(73, 70, 92); 
 }
 
-.header {
-  margin: 5px;
-  margin-top: 5px;
-  border-radius: 5px;
-}
 
 #title2 {
   color: white;
@@ -352,7 +342,6 @@ header {
 
 
 
-/* input */
 .input-container {
   position: absolute;
   top: 1700px;
@@ -414,163 +403,7 @@ header {
 
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
-}
-
-
-@media (min-width: 1366px) {
-  .tittle-spline {
-    left: 0px;
-  } 
-  .background {
-    left: 700px;
-  }
-  .text-container h1 {
-    font-size: 55px;
-  }
-  .cards-spline {
-    top: 800px;
-  }
-  .code-container-cards {
-    top: 2500px;
-  }
-
-  .text-container p {
-    font-size: 19px;
-  }
-
-  .card-code-container-html, .card-code-container-css, .card-code-container-js {
-    width: 290px;
-    height: 370px;
-  }
-
-  #code {
-    width: 260px;
-    height: 280px;
-  }
-}
-
-/* For screens that are 1440px wide or more */
-@media (min-width: 1440px) {
-
-  .text-container h1 {
-    font-size: 60px;
-  }
-
-  .text-container p {
-    font-size: 20px;
-  }
-  .cards-spline {
-    top: 800px;
-  }
-  .input-container {
-    top: 1600px;
-  }
-
-  .card-code-container-html, .card-code-container-css, .card-code-container-js {
-    width: 270px;
-    height: 390px;
-  }
-
-  #code {
-    width: 250px;
-    height: 300px;
-  }
-
-  .code-container-cards {
-    top: 2700px;
-  }
-}
-@media (min-width: 1535px) {
-
-  .text-container h1 {
-    font-size: 60px;
-  }
-
-  .text-container p {
-    font-size: 20px;
-  }
-  .cards-spline {
-    top: 890px;
-  }
-  .input-container {
-    top: 1600px;
-  }
-
-  .card-code-container-html, .card-code-container-css, .card-code-container-js {
-    width: 270px;
-    height: 390px;
-  }
-
-  #code {
-    width: 250px;
-    height: 300px;
-  }
-
-  .code-container-cards {
-    top: 2700px;
-  }
-}
-
-
-@media (min-width: 1800px) {
-
-  .tittle-spline {
-  
-    left: 50px;
-  } 
-  .background {
-    left: 1000px;
-  }
-
-
-  .cards-spline {
-    top: 800px;
-  }
-
-  .card-code-container-html, .card-code-container-css, .card-code-container-js {
-    width: 300px;
-    height: 390px;
-  }
-
-  #code {
-    width: 270px;
-    height: 300px;
-  }
-
-  .code-container-cards {
-    top: 2600px;
-  }
-}
-
-@media (min-width: 2560px) {
-  
-
-  .tittle-spline {
-
-    left: 50px;
-  } 
-  .background {
-    left: 1200px;
-  }
-
-  .cards-spline {
-    top: 600px;
-  }
-
-  .card-code-container-html, .card-code-container-css, .card-code-container-js {
-    width: 300px;
-    height: 390px;
-  }
-
-  #code {
-    width: 270px;
-    height: 300px;
-  }
-
-  .code-container-cards {
-    top: 2500px;
-  }
-}
+} 
 
 #overlay {
   position: fixed;
